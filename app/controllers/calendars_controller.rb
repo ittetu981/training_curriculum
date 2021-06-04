@@ -41,7 +41,7 @@ class CalendarsController < ApplicationController
         wday_num = wday_num -6
       end
 
-      days = { :month => (@todays_date + x).month, :date => (@todays_date + x).day, :plans => today_plans :wdsy => '(日)','(月)','(火)','(水)','(木)','(金)','(土)'}
+      days = { :month => (@todays_date + x).'month', :date => (@todays_date + x).'day', :plans => 'today_plans' :wdsy => '(日)','(月)','(火)','(水)','(木)','(金)','(土)'}
 =======
       wday_num = [ Date.today.wday ]
       if wday_num = (-6)
