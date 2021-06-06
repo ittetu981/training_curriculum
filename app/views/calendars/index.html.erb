@@ -5,9 +5,23 @@
     <%= f.text_field :plan, class: 'text-input' %> 
     <%= f.submit '保存' %>
   <% end %>
+<<<<<<< Updated upstream
 
 <div class='calendar'>
     <% @week_days.each do |day| %>
+=======
+</div>
+<div>
+  <% div class='calendars' %>
+    <%= @week_days.each do |days| %>
+  <% end %>
+</div>
+
+<div class='calendar'>
+    <% @week_days.each do |days| %>
+    
+
+>>>>>>> Stashed changes
       <div class='item'>
         <div class='date'>
           <%= day[:month] %>/<%= day[:date] %><%= day[:wday] %>
